@@ -24,13 +24,14 @@ conteúdo de um diretório.
     */
     public static void main(String arga[])throws IOException{
         
-        //usar sempre o file separator 
+        //usar sempre o file separator pois em cada sistema operacional tem o seu prorpio separador
         String separador = File.separator;
         
         System.out.println("digite o nome do diretorio");
-        //sem separator reconhecido somente no windows
         
+        //sem separator reconhecido somente no windows
         String tErrado = "C:\\Users\\JULIANO\\Documents\\loja.sql";
+        
         //usando file separator aonde o java identifica o sistema operacional
         String t = "C:"+separador+"Users"+separador+"JULIANO"+separador+"Documents"+separador+"loja.sql";
         Path path = Paths.get(t);
@@ -48,7 +49,5 @@ conteúdo de um diretório.
         else {
             System.out.println("Arquivo ou pasta não existe!");
         }
-            
-            
  }
 }
