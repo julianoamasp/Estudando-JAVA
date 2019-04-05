@@ -1,4 +1,4 @@
-package condicionais;
+package modulo4;
 
 public class IfElse {
     /*O condicional contém a palavra chave if, seguido por um teste booleano. Um
